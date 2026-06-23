@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQLO Indonesia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        UNIQLO
+    </div>
+
+    <!-- TOMBOL HAMBURGER -->
+    <div class="menu-toggle">
+
+        ☰
+
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>UNIQLO</h1>
+
+        <h3>Made For All</h3>
+
+        <p>
+            LifeWear is clothing designed to make
+            everyone's life better.
+        </p>
+
+        <a href="#collection" class="hero-btn">
+            Explore Collection
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-image">
+            <img src="images/about.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+
+            <h2>About UNIQLO</h2>
+
+            <p>
+                UNIQLO is a Japanese casual wear company
+                known worldwide for combining quality,
+                simplicity, and affordability through its
+                LifeWear philosophy.
+            </p>
+
+            <p>
+                Our mission is to create clothing that
+                makes everyday life more comfortable for
+                everyone.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h3>2500+</h3>
+        <p>Stores Worldwide</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>25+</h3>
+        <p>Countries</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>70K+</h3>
+        <p>Employees</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>1949</h3>
+        <p>Founded</p>
+    </div>
+
+</section>
+
+<!-- ================= COLLECTION ================= -->
+
+<section class="collection" id="collection">
+
+    <h2 class="section-title">
+        Featured Collection
+    </h2>
+
+    <div class="filter-buttons">
+
+        <button onclick="filterProduct('all')">
+            All
+        </button>
+
+        <button onclick="filterProduct('men')">
+            Men
+        </button>
+
+        <button onclick="filterProduct('women')">
+            Women
+        </button>
+
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card men">
+
+            <img src="images/product1.jpg">
+
+            <h3>Blazer</h3>
+
+            <p>Rp 499.000</p>
+
+        </div>
+
+        <div class="product-card women">
+
+            <img src="images/product2.jpg">
+
+            <h3>Blouse</h3>
+
+            <p>Rp 299.000</p>
+
+        </div>
+
+        <div class="product-card men">
+
+            <img src="images/product3.jpg">
+
+            <h3>Jeans</h3>
+
+            <p>Rp 399.000</p>
+
+        </div>
+
+        <div class="product-card women">
+
+            <img src="images/product4.jpg">
+
+            <h3>Cardigan</h3>
+
+            <p>Rp 449.000</p>
+
+        </div>
+
+        <div class="product-card men">
+
+            <img src="images/product5.jpg">
+
+            <h3>Jacket</h3>
+
+            <p>Rp 699.000</p>
+
+        </div>
+
+        <div class="product-card women">
+
+            <img src="images/product6.jpg">
+
+            <h3>Dress</h3>
+
+            <p>Rp 599.000</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEW ARRIVAL ================= -->
+
+<section class="arrival">
+
+    <h2 class="section-title">
+        New Arrival
+    </h2>
+
+    <div class="arrival-grid">
+
+        <div class="arrival-card">
+            <img src="images/arrival1.jpg">
+            <h4>Summer Collection</h4>
+        </div>
+
+        <div class="arrival-card">
+            <img src="images/arrival2.jpg">
+            <h4>Premium Wear</h4>
+        </div>
+
+        <div class="arrival-card">
+            <img src="images/arrival3.jpg">
+            <h4>Casual Style</h4>
+        </div>
+
+        <div class="arrival-card">
+            <img src="images/arrival4.jpg">
+            <h4>Modern Collection</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+    <h2 class="section-title">
+        Why Choose UNIQLO?
+    </h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <h3>✓</h3>
+            <p>High Quality Materials</p>
+        </div>
+
+        <div class="why-card">
+            <h3>✓</h3>
+            <p>Affordable Prices</p>
+        </div>
+
+        <div class="why-card">
+            <h3>✓</h3>
+            <p>Japanese Technology</p>
+        </div>
+
+        <div class="why-card">
+            <h3>✓</h3>
+            <p>Comfortable Everyday Wear</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HISTORY ================= -->
+
+<section class="history" id="history">
+
+    <div class="history-content">
+
+        <div class="history-text">
+
+            <h2>Our History</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>1949</span>
+                    <p>Company Founded</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>1984</span>
+                    <p>First UNIQLO Store</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2005</span>
+                    <p>Global Expansion</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2025</span>
+                    <p>Worldwide Fashion Brand</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="history-image">
+
+            <img src="images/ceo.jpg">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+    <h2 class="section-title">
+        Store Gallery
+    </h2>
+
+    <div class="gallery-grid">
+
+        <img src="images/gallery1.jpg">
+        <img src="images/gallery2.jpg">
+        <img src="images/gallery3.jpg">
+        <img src="images/gallery4.jpg">
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p>📞 (001) 80332160290</p>
+
+        <p>✉ customersupport@uniqlo.co.id</p>
+
+        <p>📍 Jakarta, Indonesia</p>
+
+        <p>🕒 Monday - Friday | 09:00 - 18:00</p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>UNIQLO</h3>
+
+    <p>LifeWear For Everyone</p>
+
+    <p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
