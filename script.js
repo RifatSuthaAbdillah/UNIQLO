@@ -29,42 +29,57 @@ changeHero();
 
 setInterval(changeHero, 4000);
 
-
 // =========================
-// PRODUCT FILTER
+// RENDER PRODUCT
 // =========================
 
-function filterProduct(category) {
+const productGrid =
+document.getElementById("productGrid");
 
-    const cards =
-        document.querySelectorAll(".product-card");
+function renderProducts(data){
 
-    cards.forEach(card => {
+    productGrid.innerHTML = "";
 
-        if (category === "all") {
+    data.forEach(product => {
 
-            card.style.display = "block";
-
-        }
-
-        else if (
-            card.classList.contains(category)
-        ) {
-
-            card.style.display = "block";
-
-        }
-
-        else {
-
-            card.style.display = "none";
-
-        }
+        productGrid.innerHTML += `
+        <div class="product-card ${product.category}">
+            <img src="${product.image}">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+        </div>
+        `;
 
     });
 
 }
 
+renderProducts(products);
+
+// =========================
+// PRODUCT FILTER
+// =========================
+
+function filterProduct(category){
+
+    if(category === "all"){
+
+        renderProducts(products);
+
+    }
+
+    else{
+
+        const filteredProducts =
+        products.filter(product =>
+            product.category === category
+        );
+
+        renderProducts(filteredProducts);
+
+    }
+
+}
 
 // =========================
 // NAVBAR SHADOW ON SCROLL
